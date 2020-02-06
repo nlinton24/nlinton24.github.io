@@ -12,7 +12,7 @@
 <h1>Unit Converter</h1>
 
 
-<select id="inputunits">
+<p>Input Units   <select id="inputunits">
   <option value="feet">Feet</option>
   <option value="meters">Meters</option>
   <option value="inches">Inches</option>
@@ -21,30 +21,20 @@
     <option value="miles">Miles</option>
 </select>
 
+<input id="input" type="number" placeholder="Input"></p>
 
 
-<input id="input" type="number" placeholder="Input">
-
-<br>
-<br>
-
-<select id="outputunits">
+<p>Output Units   <select id="outputunits">
   <option value="ofeet">Feet</option>
   <option value="ometers">Meters</option>
   <option value="oinches">Inches</option>
   <option value="okilometer">Kilometer</option>
     <option value="oyards">Yards</option>
     <option value="omiles">Miles</option>
-</select>
+</select></p>
 
-<br>
-<br>
-<br>
-
-<button onclick="myFunction()">Convert</button>
-
-<br>
-
+<p><button onclick="myFunction()">Convert</button></p>
+        
 <div class= "output">
   <p id = "outResult"></p>
   </div>
