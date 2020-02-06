@@ -3,17 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="UnitConverter.js"/></script>
+
 </head>
 <body>
 
-<p>
-    <label>Feet</label>
-    <input id="inputfeet" type="number" placeholder="Feet"
-           oninput="lengthConverter(this.value)"
-           onchange="lengthConverter(this.value)">
-</p>
-<p>cm: <span id="outputMeters"</p></span>
+<select id="inputunits">
+  <option value="feet">Feet</option>
+  <option value="meters">Meters</option>
+  <option value="inches">Inches</option>
+  <option value="kilometer">Kilometer</option>
+    <option value="yards">Yards</option>
+    <option value="miles">Miles</option>
+</select>
 
+
+
+<input id="input" type="number" placeholder="Input">
+
+<br>
+<br>
+
+<select id="outputunits">
+  <option value="ofeet">Feet</option>
+  <option value="ometers">Meters</option>
+  <option value="oinches">Inches</option>
+  <option value="okilometer">Kilometer</option>
+    <option value="oyards">Yards</option>
+    <option value="omiles">Miles</option>
+</select>
+
+<br>
+<br>
+<br>
+
+<button onclick="myFunction()">Convert</button>
+
+<br>
+
+<div class= "output">
+  <p id = "outResult"></p>
+  </div>
 
 </body>
 </html>
