@@ -4,10 +4,11 @@ p {
 	text-align:center;
 }
 
-h1 {font-family:georgia; color:white; size:7; text-align: center}
-h2 {font-family:georgia; color:white; size:7; text-align: center}
+h1 {font-family:georgia; color:white; font-size:32px; text-align: center}
+h2 {font-family:georgia; color:white; font-size:16px; text-align: center}
 h3 {font-family:"Times New Roman"; Size:5; color:White; text-align: center}
 h4 {font-family:"Times New Roman"; color:white; size:7; text-align: center}
+
 
 background: rgb(2,0,36);
 background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(125,6,19,1) 100%, rgba(0,212,255,1) 100%);
