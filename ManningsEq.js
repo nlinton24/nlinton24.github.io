@@ -19,14 +19,15 @@ function myfunc() {
     }
     else {
         units = document.getElementById("units").value
+        str2='Computed flow velocity, v, is '
         s2 = Math.sqrt(s);
         r = d * 2 + w
         if (units == 'SI') {
             str = " m/s"
-            valNum = 1 / n * r ** (2 / 3) * s2 + str
+            valNum =str2 + 1 / n * r ** (2 / 3) * s2 + str
         } else {
             str = ' ft/s'
-            valNum = 1.49 / n * r ** (2 / 3) * s2 + str
+            valNum =str2 + 1.49 / n * r ** (2 / 3) * s2 + str
         }
     }
     document.getElementById('outResult').innerHTML = valNum;
