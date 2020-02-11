@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="ManningsEq.js"/></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>Input Units   <select id="units">
+  <option value="SI">SI</option>
+  <option value="English">English</option>
+</select>
+
+            <br>
+
+<p>Rh (Wetted Perimeter)</p><input id="r" type="number" placeholder="Input Wetted Perimeter">
+            <br>
+<p>Slope as a Decimal</p><input id="s" type="number" placeholder="Input Slope">
+            <br>
+<p>n (Roughness Coefficient)</p><input id="n" type="number" placeholder="Input Roughness Coefficient">
+
+            <p><button onclick="myfunc()">Calculate Velocity</button></p>
+
+<div class= "output">
+  <p id = "outResult"></p>
+  </div>
+
+</body>
+</html>
