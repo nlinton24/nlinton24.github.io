@@ -2,21 +2,34 @@
 
 function myfunc() {
     n = document.getElementById("n").value
-    r = document.getElementById("r").value
+    d = document.getElementById("d").value
+    w = document.getElementById("w").value
     s = document.getElementById("s").value
-    units = document.getElementById("units").value
-
-    if (units =='SI') {
-        str="m/s"
-        valNum =1 / n * r ^ (2 / 3) * s ^ (.5) + "m/s"
-    } else {
-        str="ft/s"
-        valNum =1.49 / n * r ^ (2 / 3) * s ^ (.5) + str
+    if (n<0) {
+        alert('n Cannot Be Negative')
     }
-
+    if(n>1){
+        alert('n Cannot Be Greater Than One')
+    }
+    if(s<0){
+         alert('Slope Cannot Be Negative')
+    }
+    if(s>1){
+         alert('Slope Cannot Be Greater Than One')
+    }
+    else {
+        units = document.getElementById("units").value
+        s2 = Math.sqrt(s);
+        r = d * 2 + w
+        if (units == 'SI') {
+            str = " m/s"
+            valNum = 1 / n * r ** (2 / 3) * s2 + str
+        } else {
+            str = ' ft/s'
+            valNum = 1.49 / n * r ** (2 / 3) * s2 + str
+        }
+    }
     document.getElementById('outResult').innerHTML = valNum;
-    document.getElementById('sout').innerHTML = s
-    document.getElementById('nout').innerHTML = n
-    document.getElementById('unitsout').innerHTML = units
-    document.getElementById('rout').innerHTML = r
+
+
 }

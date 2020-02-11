@@ -6,7 +6,10 @@
     <title>Title</title>
 </head>
 <body>
-
+<h1>Velocity Calculator Using Mannings Equation</h1>
+            <h3>Assignment 6</h3>
+            <h3>Date: 2/11/2020</h3>
+            <img src="Capture.PNG">
 <p>Input Units</p> <select id="units">
   <option value="SI">SI (m)</option>
   <option value="English">English (ft)</option>
@@ -14,28 +17,15 @@
 
 <br>
 
-<p>Rh (Wetted Perimeter)</p><input id="r" type="number" placeholder="Input Wetted Perimeter">
-<br>
-<p>Slope as a Decimal</p><input id="s" type="number" placeholder="Input Slope">
-<br>
-<p>n (Roughness Coefficient)</p><input id="n" type="number" placeholder="Input Roughness Coefficient">
+<p>Depth of Channel  <input id="d" type="number" placeholder="Input Depth"></p>
+<p>Width of Channel  <input id="w" type="number" placeholder="Input Width"></p>
+<p>Slope as a Decimal  <input id="s" type="number" placeholder="Input Slope"></p>
+<p>n (Roughness Coefficient)  <input id="n" type="number" placeholder="Input Roughness Coefficient"></p>
 
 <p><button onclick="myfunc()">Calculate Velocity</button></p>
 
 <div class= "output">
   <p id = "outResult"></p>
-  </div>
-            <div class= "output">
-  <p id = "nout"></p>
-  </div>
-            <div class= "output">
-  <p id = "sout"></p>
-  </div>
-            <div class= "output">
-  <p id = "unitsout"></p>
-  </div>
-             <div class= "output">
-  <p id = "rout"></p>
   </div>
 
 </body>
