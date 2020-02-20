@@ -41,5 +41,5 @@ var hradius = L.circle([40.519171, -111.865332], {
     color: 'blue',
     fillColor: '#f03',
     fillOpacity: 0.3,
-    radius: 1000,
+    radius: 900,
 }).addTo(mymap);
