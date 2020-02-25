@@ -20,9 +20,7 @@ function myfunc() {
             format: 'image/png',
             transparent: true,
         }).addTo(mymap);
-    }
-
-    else {
+    } else {
         var Layer = L.tileLayer.wms('https://geoserver.hydroshare.org/geoserver/HS-bd70a1dc8595428db3ae8eacd0ed4f76/wms?', {
             layers: 'Want_to_Visit',
             format: 'image/png',
