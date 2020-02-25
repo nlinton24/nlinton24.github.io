@@ -15,7 +15,7 @@ function myfunc() {
 
     if (select = 'beento') {
 
-        var layer1 = L.tileLayer.wms('https://geoserver.hydroshare.org/geoserver/HS-bd70a1dc8595428db3ae8eacd0ed4f76/wms?', {
+        var layer = L.tileLayer.wms('https://geoserver.hydroshare.org/geoserver/HS-bd70a1dc8595428db3ae8eacd0ed4f76/wms?', {
             layers: 'Countries_Visited',
             format: 'image/png',
             transparent: true,
@@ -23,7 +23,7 @@ function myfunc() {
     }
 
     else {
-        var Layer2 = L.tileLayer.wms('https://geoserver.hydroshare.org/geoserver/HS-bd70a1dc8595428db3ae8eacd0ed4f76/wms?', {
+        var Layer = L.tileLayer.wms('https://geoserver.hydroshare.org/geoserver/HS-bd70a1dc8595428db3ae8eacd0ed4f76/wms?', {
             layers: 'Want_to_Visit',
             format: 'image/png',
             transparent: true,
