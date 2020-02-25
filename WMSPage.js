@@ -13,7 +13,7 @@ function myfunc() {
     select = document.getElementById("layer").value
 
 
-    if (select = 'beento') {
+    if (select == 1) {
 
         var layer = L.tileLayer.wms('https://geoserver.hydroshare.org/geoserver/HS-bd70a1dc8595428db3ae8eacd0ed4f76/wms?', {
             layers: 'Countries_Visited',
