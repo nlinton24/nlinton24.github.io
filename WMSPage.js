@@ -8,14 +8,25 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1IjoibmxpbnRvbjI0IiwiYSI6ImNrNnUwcnRidTA1Mzkza3FwaDM1aTRocm8ifQ.mqo3juol2aCkmaremutQDQ'
 }).addTo(mymap);
 
-var County = L.tileLayer.wms('https://geoserver.hydroshare.org/geoserver/HS-bd70a1dc8595428db3ae8eacd0ed4f76/wms?', {
-    layers: 'Countries_Visited',
-    format: 'image/png',
-    transparent: true,
-}).addTo(mymap);
+function myfunc() {
 
-var County = L.tileLayer.wms('https://geoserver.hydroshare.org/geoserver/HS-bd70a1dc8595428db3ae8eacd0ed4f76/wms?', {
-    layers: 'Want_to_Visit',
-    format: 'image/png',
-    transparent: true,
-}).addTo(mymap);
+    select = document.getElementById("layer").value
+
+
+    if (select = 'beento') {
+
+        var layer1 = L.tileLayer.wms('https://geoserver.hydroshare.org/geoserver/HS-bd70a1dc8595428db3ae8eacd0ed4f76/wms?', {
+            layers: 'Countries_Visited',
+            format: 'image/png',
+            transparent: true,
+        }).addTo(mymap);
+    }
+
+    else {
+        var Layer2 = L.tileLayer.wms('https://geoserver.hydroshare.org/geoserver/HS-bd70a1dc8595428db3ae8eacd0ed4f76/wms?', {
+            layers: 'Want_to_Visit',
+            format: 'image/png',
+            transparent: true,
+        }).addTo(mymap);
+    }
+}
